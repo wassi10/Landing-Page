@@ -1,0 +1,78 @@
+.faq {
+    padding: 128px 0px 128px 0px;
+}
+
+.faq-row {
+    display: flex;
+    gap: 109px;
+}
+
+.faq-row .faq-content h1 {
+    font-weight: var(--font-bold);
+    font-size: 38px;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+.faq-row .faq-content a {
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    color: #2405F2;
+}
+
+
+.faq-row .faq-content .accordion {
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    padding: 32px 0px;
+}
+
+.faq-row .faq-content .accordion:not(:last-child) {
+    border-bottom: 2px solid #ECECF1;
+}
+
+.faq-row .faq-content .accordion .faq-list {
+    display: flex;
+    gap: 55px;
+}
+
+.faq-list .accordion-list h2 {
+    font-weight: var(--font-medium);
+    font-size: 24px;
+    color: #2405F2;
+}
+
+.faq-list .summary h2 {
+    font-weight: var(--font-medium);
+    font-size: 24px;
+    color: #282938;
+}
+
+.faq-list .summary .desc {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.faq-list .summary .desc p {
+    font-weight: var(--font-medium);
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 16px;
+    color: #282938;
+}
+
+.accordion .icon {
+    display: grid;
+    place-items: center;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.accordion.onstate .desc {
+    max-height: min-content;
+}
+
+.accordion.onstate .icon {
+    rotate: 45deg;
+}

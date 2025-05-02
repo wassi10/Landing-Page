@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 160px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+.navbar a {
+    font-size: var(--normal-font-size);
+    color: var(--nav-color);
+    font-weight: var(--font-medium);
+    margin-left: 32px;
+    transition: color .3s;
+}
+
+.navbar a:hover {
+    color: #FFFFFF;
+}
+
+.contact-btn {
+    margin-left: 16px;
+}
+
+.contact-btn .btn {
+    border: 1px solid var(--nav-color);
+    border-radius: 42px;
+    padding: 16px 48px;
+}

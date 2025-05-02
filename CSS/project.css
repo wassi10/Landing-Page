@@ -1,0 +1,94 @@
+.projects-section {
+    padding: 128px 0px 128px 0px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1280px; */
+}
+
+.project-header h2 {
+    font-weight: var(--font-bold);
+    font-size: var(--h1-font-size);
+    color: #282938;
+    margin-bottom: 64px;
+}
+
+.project-header .view-more {
+    font-weight: 500;
+    font-size: 16px;
+    color: #282938;
+    margin-bottom: 64px;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 23px;
+}
+
+.projects-card-small {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Common Styles for All Project Cards */
+.project-card-large,
+.project-card-2,
+.project-card-3 {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(27, 29, 81, 0.44), rgba(28, 30, 83, 0.6), rgba(27, 29, 82, 0.94));
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.project-card-large:hover .overlay {
+    width: 50%;
+}
+
+.project-card-2:hover .overlay,
+.project-card-3:hover .overlay {
+    width: 100%;
+}
+
+/* Text Styles Inside Overlay */
+.overlay h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.overlay .overlay-large {
+    margin: 120px 0px 16px 48px;
+}
+
+.overlay .overlay-small {
+    margin: 50px 0px 16px 48px;
+}
+
+.overlay p {
+    margin: 0px 0px 40px 48px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.overlay a {
+    color: #FCD980;
+    margin: 0px 0px 76px 48px;
+}

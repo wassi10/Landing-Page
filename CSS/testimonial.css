@@ -1,0 +1,97 @@
+.testimonial {
+    padding: 128px 0px 128px 0px;
+    background: hsla(225, 57%, 97%, 50%);
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 110px;
+}
+
+.testimonial-left {
+    flex: 1;
+    max-width: 327px;
+}
+
+.testimonial-left h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    color: #282938;
+}
+
+.testimonial-left p {
+    font-size: 16px;
+    color: #282938;
+    margin-top: 16px;
+    line-height: var(--line-height);
+}
+
+.testimonial-right {
+    flex: 2;
+    max-width: 843px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-weight: var(--font-medium);
+    font-size: 32px;
+    color: #282938;
+    line-height: 48px;
+}
+
+.client {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.client-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: var(--font-medium);
+    color: #282938;
+}
+
+.client-role {
+    color: #282938;
+    font-size: 12px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.nav-buttons button {
+    background: none;
+    font-size: 20px;
+    color: #282938;
+    width: 13px;
+    height: 22px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-buttons button:hover {
+    background: #5239FA;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 50%;
+}
